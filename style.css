@@ -1,12 +1,16 @@
-
-#p {
- color: #993399;
+body {
+ background-color: #994d00;
 }
 
-#h1 {
+
+p {
+ font-color: #993399;
+}
+
+h1 {
  height:242px;
  margin:0px auto 15px auto;
  font-family:Verdana, Arial, Helvetica, sans-serif;
- color: red;  
+ font-color: red;  
 }
   
