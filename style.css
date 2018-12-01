@@ -12,4 +12,16 @@ h1 {
  margin:0px auto 15px auto;
  font-family:Verdana, Arial, Helvetica, sans-serif;
 }
+
+#map {
+    height: 240px;
+    width: 40%;
+}
+
+#div1 {
+    width: 465px;
+    height: 613px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
   

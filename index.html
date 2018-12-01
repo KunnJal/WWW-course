@@ -26,6 +26,39 @@
           }
       </script>
 
+      <script>
+          function initMap() {
+              var location = { lat: 64.222, lng: 27.728 };
+              var map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 4,
+                  center: location
+              });
+              var marker = new google.maps.Marker({
+                  position: location,
+                  map: map
+              })
+          }
+          
+      </script>
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnPGu48emHkv9MDy-HI5JyHkXzuc1bXY4&callback=initMap"></script>
+
+      <script>
+          function allowDrop(ev) {
+              ev.preventDefault();
+          }
+
+          function drag(ev) {
+              ev.dataTransfer.setData("text", ev.target.id);
+          }
+
+          function drop(ev) {
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+          }
+      </script>
+
     </head>
 
     <body>
@@ -42,6 +75,15 @@
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/UHh1TxryWlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
+
+        <p></p>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <img id="drag1" src="Pictures/Creative_Assembly.png" draggable="true"
+             ondragstart="drag(event)" width="465" height="613">
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
       <table>
           <tr>
@@ -98,6 +140,12 @@
           </tr>
 
       </table>
+
+      <p></p>
+
+      <div id="map"></div>
+
+      <p></p>
 
     <form name="myForm" onsubmit="return validateForm()">
         Name: <input type="input" name="username"/>
