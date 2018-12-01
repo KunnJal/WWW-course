@@ -1,19 +1,21 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Company showcase</title>
+
+      <title>Company showcase</title
+>
       <link href="style.css" rel="stylesheet" type="text/css">
 
       <script>
           function validateForm()
           {
-              if (document.forms["myForm"]["name"].value == null || document.forms["myForm"]["name"].value == null"")
+              if (document.forms["myForm"]["name"].value == null || document.forms["myForm"]["name"].value=="")
               {
                   alert("Name must be filled out");
                   return false;
               }
 
-              if (document.forms["myForm"]["e-mail"].value == null || document.forms["myForm"]["e-mail"].value == null"")
+              if (document.forms["myForm"]["e-mail"].value == null || document.forms["myForm"]["e-mail"].value =="")
               {
                   alert("E-mail must be filled out");
                   return false;
@@ -23,6 +25,7 @@
 
           }
       </script>
+
     </head>
 
     <body>
@@ -93,10 +96,12 @@
 
       </table>
 
-    <form>
+    <form name="myForm" onsubmit="return validateForm()">
         Name: <input type="input" name="username"/>
         <br/><br/>
-        E-mail:<input type="input" name="e-mail"/>
+        E-mail: <input type="input" name="e-mail"/>
+        <br /><br />
+        Submit: <input type="submit" value="Submit"/>
     </form>
 
     </body>
