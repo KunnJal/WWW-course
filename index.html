@@ -3,6 +3,26 @@
     <head>
       <title>Company showcase</title>
       <link href="style.css" rel="stylesheet" type="text/css">
+
+      <script>
+          function validateForm()
+          {
+              if (document.forms["myForm"]["name"].value == null || document.forms["myForm"]["name"].value == null"")
+              {
+                  alert("Name must be filled out");
+                  return false;
+              }
+
+              if (document.forms["myForm"]["e-mail"].value == null || document.forms["myForm"]["e-mail"].value == null"")
+              {
+                  alert("E-mail must be filled out");
+                  return false;
+              }
+
+              return true;
+
+          }
+      </script>
     </head>
 
     <body>
@@ -72,6 +92,12 @@
           </tr>
 
       </table>
+
+    <form>
+        Name: <input type="input" name="username"/>
+        <br/><br/>
+        E-mail:<input type="input" name="e-mail"/>
+    </form>
 
     </body>
 
