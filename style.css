@@ -2,56 +2,43 @@ body {
  background-image: url(Pictures/RoseBackground.jpg);
 }
 
-#videoPos {
-    position: absolute;
-    top: 400px;
-    right: 200px;
+h2, table, ul {
+    font-family: Times, Times New Roman, serif;
 }
 
-#ulPos {
-    position: absolute;
-    top: 400px;
-    left: 200px;
-}
+#layout {
 
-h2, table, tr, ul {
-    padding: 10px;
-    font-family: Optima, sans-serif;
-    background-color: rgb(255, 204, 230);
 }
 
 h2 {
-    width: 200px;
     text-align: center;
+}
+
+#basicInfo {
     position: absolute;
-    left: 200px;
+    top: 350px;
+    left: 250px;
+    background-color: rgb(255, 179, 217);
+    width: 500px;
 }
 
-th, li {
-    padding: 5px;
-}
-
-ul {
-    width: 300px;
+#tableOfPublications {
     position: absolute;
-    left: 200px;
-}
-
-table {
-    position: absolute;
-    left: 200px;
-}
-
-#th_item1 {
-    text-align: left;
+    top: 600px;
+    left: 250px;
+    background-color: rgb(255, 179, 217);
+    width: 500px;
 }
 
 #map {
     height: 240px;
+    margin: auto;
     width: 40%;
+    top: 1200px;
+    left: 250px;
+    border: 3px solid pink;
+    padding: 10px;
     position: absolute;
-    left: auto;
-    top: auto;
 }
 
 #div1 {
@@ -59,18 +46,18 @@ table {
     height: 306px;
     padding: 10px;
     border: 1px solid #aaaaaa;
-    position: absolute;
     top: 800px;
     right: 200px;
+    position: absolute;
 }
 
 #drag1 {
     width: 232px;
     height: 306px;
-    padding: 10px;
-    position: static;
     top: 800px;
-    right: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #div2 {
@@ -78,9 +65,9 @@ table {
     height: 306px;
     padding: 10px;
     border: 1px solid #aaaaaa;
-    position: absolute;
     top: 800px;
     right: 500px;
+    position: absolute;
 }
 
 #topLogo {
@@ -89,8 +76,17 @@ table {
     margin-right: auto;
 }
 
-#rightTag {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#video {
+    position: absolute;
+    top: 350px;
+    right: 250px;
+}
+
+#form {
+    top: 1200px;
+    right: 250px;
+    border: 3px solid pink;
+    padding: 10px;
+    position: absolute;
+    background-color: rgb(255, 179, 217);
 }
