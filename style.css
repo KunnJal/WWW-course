@@ -1,16 +1,19 @@
 body {
- background-color: #994d00;
+ background-image: url(Pictures/RoseBackground.jpg);
 }
 
-
-p {
- 
+h2, table, tr, ul {
+    padding: 10px;
+    font-family: Optima, sans-serif;
+    background-color: rgb(255, 204, 230);
 }
 
-h1 {
- height:242px;
- margin:0px auto 15px auto;
- font-family:Verdana, Arial, Helvetica, sans-serif;
+th, li {
+    padding: 5px;
+}
+
+#th_item1 {
+    text-align: left;
 }
 
 #map {
@@ -24,4 +27,15 @@ h1 {
     padding: 10px;
     border: 1px solid #aaaaaa;
 }
-  
+
+#topLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rightTag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
