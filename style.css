@@ -2,14 +2,44 @@ body {
  background-image: url(Pictures/RoseBackground.jpg);
 }
 
+#videoPos {
+    position: absolute;
+    top: 400px;
+    right: 200px;
+}
+
+#ulPos {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
 h2, table, tr, ul {
     padding: 10px;
     font-family: Optima, sans-serif;
     background-color: rgb(255, 204, 230);
 }
 
+h2 {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    left: 200px;
+}
+
 th, li {
     padding: 5px;
+}
+
+ul {
+    width: 300px;
+    position: absolute;
+    left: 200px;
+}
+
+table {
+    position: absolute;
+    left: 200px;
 }
 
 #th_item1 {
@@ -19,13 +49,38 @@ th, li {
 #map {
     height: 240px;
     width: 40%;
+    position: absolute;
+    left: auto;
+    top: auto;
 }
 
 #div1 {
-    width: 465px;
-    height: 613px;
+    width: 232px;
+    height: 306px;
     padding: 10px;
     border: 1px solid #aaaaaa;
+    position: absolute;
+    top: 800px;
+    right: 200px;
+}
+
+#drag1 {
+    width: 232px;
+    height: 306px;
+    padding: 10px;
+    position: static;
+    top: 800px;
+    right: 800px;
+}
+
+#div2 {
+    width: 232px;
+    height: 306px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    position: absolute;
+    top: 800px;
+    right: 500px;
 }
 
 #topLogo {
