@@ -6,8 +6,8 @@ h2, table, ul {
     font-family: Times, Times New Roman, serif;
 }
 
-#layout {
-
+#thCenter {
+    text-align: left;
 }
 
 h2 {
@@ -19,6 +19,7 @@ h2 {
     top: 350px;
     left: 250px;
     background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
     width: 500px;
 }
 
@@ -27,6 +28,7 @@ h2 {
     top: 600px;
     left: 250px;
     background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
     width: 500px;
 }
 
@@ -45,10 +47,12 @@ h2 {
     width: 232px;
     height: 306px;
     padding: 10px;
-    border: 1px solid #aaaaaa;
+    border: 3px solid pink;
     top: 800px;
     right: 200px;
     position: absolute;
+    background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
 }
 
 #drag1 {
@@ -64,10 +68,12 @@ h2 {
     width: 232px;
     height: 306px;
     padding: 10px;
-    border: 1px solid #aaaaaa;
+    border: 3px solid pink;
     top: 800px;
     right: 500px;
     position: absolute;
+    background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
 }
 
 #topLogo {
