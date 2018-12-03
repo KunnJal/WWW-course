@@ -2,8 +2,14 @@ body {
  background-image: url(Pictures/RoseBackground.jpg);
 }
 
-h2 {
+h2, h1 {
     text-align: center;
+}
+
+#h1PinkBackground {
+    background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
+    border: 3px solid pink;
 }
 
 #thTag {
@@ -45,7 +51,8 @@ h2 {
     position: absolute;
 }
 
-#dragGrid{
+#dragGrid {
+    margin: 5px auto 5px auto;
 }
 
 #div1 {
@@ -101,7 +108,6 @@ h2 {
 }
 
 #video {
-    align-self: center;
 }
 
 #form {
