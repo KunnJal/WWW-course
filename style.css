@@ -2,78 +2,96 @@ body {
  background-image: url(Pictures/RoseBackground.jpg);
 }
 
-h2, table, ul {
-    font-family: Times, Times New Roman, serif;
-}
-
-#thCenter {
-    text-align: left;
-}
-
 h2 {
     text-align: center;
 }
 
+#thTag {
+    text-align: left;
+}
+
+#body {
+    width: 700px;
+    margin: 50px auto 50px auto;
+}
+
 #basicInfo {
-    position: absolute;
-    top: 350px;
-    left: 250px;
     background-color: rgb(255, 179, 217);
     background-image: linear-gradient(rgb(255, 179, 217), white);
-    width: 500px;
+    border: 3px solid pink;
+    padding: 10px;
+    width: 60%;
 }
 
 #tableOfPublications {
-    position: absolute;
-    top: 600px;
-    left: 250px;
     background-color: rgb(255, 179, 217);
     background-image: linear-gradient(rgb(255, 179, 217), white);
-    width: 500px;
+    border: 3px solid pink;
+    padding: 10px;
+    width: 50%;
 }
 
 #map {
     height: 240px;
     margin: auto;
-    width: 40%;
-    top: 1200px;
-    left: 250px;
+    width: 100%;
     border: 3px solid pink;
     padding: 10px;
+}
+
+#standTable{
+    width: 350px;
+    margin: 700px 150px auto auto;
     position: absolute;
+}
+
+#dragGrid{
 }
 
 #div1 {
     width: 232px;
-    height: 306px;
+    height: 330px;
     padding: 10px;
     border: 3px solid pink;
-    top: 800px;
-    right: 200px;
-    position: absolute;
+    background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
+}
+
+#div2 {
+    width: 232px;
+    height: 330px;
+    padding: 10px;
+    border: 3px solid pink;
+    background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
+}
+
+#div3 {
+    width: 232px;
+    height: 330px;
+    padding: 10px;
+    border: 3px solid pink;
+    background-color: rgb(255, 179, 217);
+    background-image: linear-gradient(rgb(255, 179, 217), white);
+}
+
+#div4 {
+    width: 232px;
+    height: 330px;
+    padding: 10px;
+    border: 3px solid pink;
     background-color: rgb(255, 179, 217);
     background-image: linear-gradient(rgb(255, 179, 217), white);
 }
 
 #drag1 {
-    width: 232px;
-    height: 306px;
-    top: 800px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#div2 {
-    width: 232px;
-    height: 306px;
-    padding: 10px;
-    border: 3px solid pink;
-    top: 800px;
-    right: 500px;
-    position: absolute;
-    background-color: rgb(255, 179, 217);
-    background-image: linear-gradient(rgb(255, 179, 217), white);
+#drag2 {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #topLogo {
@@ -83,16 +101,13 @@ h2 {
 }
 
 #video {
-    position: absolute;
-    top: 350px;
-    right: 250px;
+    align-self: center;
 }
 
 #form {
-    top: 1200px;
-    right: 250px;
+    margin: 5px auto 5px auto;
+    width: 35%;
     border: 3px solid pink;
     padding: 10px;
-    position: absolute;
     background-color: rgb(255, 179, 217);
 }

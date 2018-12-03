@@ -62,84 +62,109 @@
 
     <body>
 
-      <img id="topLogo" src="Pictures/JoJo_logo.png" />
-
-        <div id="layout">
-            <div id="basicInfo">
-                <h2>Basic info</h2>
-
-                <ul id="leftSide">
-                    <li>Written and illusrtated by Hirohiko Araki</li>
-                    <li>First published in January 1987</li>
-                    <li>One of the most influential manga/anime of all time</li>
-                </ul>
-            </div>
+        <div id="standTable">
+            <table>
+                <tr>
+                    <th>
+                        <img id="drag1" src="Pictures/Echoes_Act3_color.png" draggable="true"
+                             ondragstart="drag(event)" width="232" height="306">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img id="drag2" src="Pictures/GER_Profile.png" draggable="true"
+                             ondragstart="drag(event)" width="225" height="300">
+                    </th>
+                </tr>
+            </table>
         </div>
 
-        <div id="layout">
-            <div id="tableOfPublications">
-                <h2 id="rightSide">Table of manga publications</h2>
+        <div id="body">
+            <img id="topLogo" src="Pictures/JoJo_logo.png" />
 
-                <table id="rightSide">
+                <div id="basicInfo">
+                    <h2>Basic info</h2>
+
+                    <ul id="leftSide">
+                        <li>Written and illusrtated by Hirohiko Araki</li>
+                        <li>First published in January 1987</li>
+                        <li>One of the most influential manga/anime of all time</li>
+                    </ul>
+                </div>
+
+                <div id="tableOfPublications">
+                    <h2 id="rightSide">Table of manga publications</h2>
+
+                    <table>
+                        <tr>
+                            <th>Part</th>
+                            <th>Year published</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#1 Phantom Blood</th>
+                            <th>1987</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#2 Battle Tendency</th>
+                            <th>1987</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#3 Stardust Crusaders</th>
+                            <th>1989</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#4 Diamond Is Unbreakable</th>
+                            <th>1992</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#5 Golden Wind</th>
+                            <th>1995</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#6 Stone Ocean</th>
+                            <th>2000</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#7 Steel Ball Run</th>
+                            <th>2004</th>
+                        </tr>
+                        <tr>
+                            <th id="thTag">#8 Jojolion</th>
+                            <th>2011</th>
+                        </tr>
+                    </table>
+                </div>
+
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Bz0bJl274xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            
+            <h1>Drag and drop stands to correct boxes</h1>
+            <div id="dragGrid">
+                <table>
                     <tr>
-                        <th>Part</th>
-                        <th>Year published</th>
+                        <th>
+                            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" <p>Gold Experience Requiem</p></div>
+
+                        </th>
+                        <th>
+                            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" <p>Echoes Act 3</p></div>
+                        </th>
                     </tr>
-                    <tr>
-                        <th id="thCenter">#1 Phantom Blood</th>
-                        <th>1987</th>
-                    </tr>
-                    <tr>
-                        <th id="thCenter">#2 Battle Tendency</th>
-                        <th>1987</th>
-                    </tr>
-                    <tr>
-                        <th id="thCenter">#3 Stardust Crusaders</th>
-                        <th>1989</th>
-                    </tr>
-                    <tr>
-                        <th id="thCenter">#4 Diamond Is Unbreakable</th>
-                        <th>1992</th>
-                    </tr>
-                    <tr>
-                        <th id="thCenter">#5 Golden Wind</th>
-                        <th>1995</th>
-                    </tr>
-                    <tr>
-                        <th id="thCenter">#6 Stone Ocean</th>
-                        <th>2000</th>
-                    </tr>
-                    <tr>
-                        <th id="thCenter">#7 Steel Ball Run</th>
-                        <th>2004</th>
-                    </tr>
-                    <tr>
-                        <th id="thCenter">#8 Jojolion</th>
-                        <th>2011</th>
-                    </tr>
+
                 </table>
             </div>
-        </div>
 
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Bz0bJl274xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="map"></div>
 
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-        <img id="drag1" src="Pictures/Echoes_Act3_color.png" draggable="true"
-             ondragstart="drag(event)" width="232" height="306">
-
-        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-      <div id="map"></div>
-
-        <div id="form">
-            <form name="myForm" onsubmit="return validateForm()">
-                Name: <input type="input" name="username" />
-                <br /><br />
-                E-mail: <input type="input" name="e-mail" />
-                <br /><br />
-                Submit: <input type="submit" value="Submit" />
-            </form>
+            <div id="form">
+                <form name="myForm" onsubmit="return validateForm()">
+                    Name: <input type="input" name="username" />
+                    <br /><br />
+                    E-mail: <input type="input" name="e-mail" />
+                    <br /><br />
+                    Submit: <input type="submit" value="Submit" />
+                </form>
+            </div>
         </div>
 
     </body>
